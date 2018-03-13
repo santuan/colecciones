@@ -17,33 +17,5 @@ sass:
 
 host: 192.168.0.106
 
-title:
-  es: STN - Bienvenido
-  en: STN - Welcome
-description:
-  es: Una descripcion en español
-  en: Some description in english
-index:
-  es: 
-  en: welcome
-github_username:  santuan
-
 paginate: 12
 paginate_path: "/libres/:num/"
-
-t:
-  es:
-    open-source:
-      name: "Colecciones libres"
-      url: "/libres/"
-    submit:
-      name: "Sugerir"
-      url: "/sugerir/"
-  en:
-    open-source:
-      name: "Open Source Collection"
-      url: "/open-source/"
-    submit:
-      name: "Submit"
-      url: "/submit/"
-
