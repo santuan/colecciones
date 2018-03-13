@@ -12,7 +12,8 @@
   transition: all 0.88s cubic-bezier(0.7, 0, 0.3, 1);
   padding-top: 20px; }
   .way-header .primary-menu {
-    min-height: 70px; }
+    min-height: 70px;
+    padding-top: 5px; }
     .way-header .primary-menu .logo {
       -webkit-transition: all 0.88s cubic-bezier(0.7, 0, 0.3, 1);
       -moz-transition: all 0.88s cubic-bezier(0.7, 0, 0.3, 1);
@@ -81,15 +82,17 @@
   background: #f9f1e9; }
 
 .main-title {
-  position: absolute;
+  position: relative;
   margin: 0;
   padding: 0;
   color: #f9f1e9;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0); }
+  /* top: 50%; */
+  /* left: 50%; */
+  /* -webkit-transform: translate3d(-50%, -50%, 0); */
+  /* transform: translate3d(-50%, -50%, 0); */
+  /* display: flex; */
+  /* flex-direction: column; */ }
   .main-title p {
     color: #fff;
     font-size: 20px;
@@ -263,11 +266,13 @@ p:last-child {
 
 .mxt-container .mix {
   text-align: left;
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
   padding: 0;
   vertical-align: top;
   background: #fff;
-  -webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+  max-width: 324px;
+  margin: 0 auto 2%; }
 
 /* Flex box progressive enhancements: */
 .mxt-container {
@@ -276,10 +281,6 @@ p:last-child {
   -webkit-justify-content: space-between;
   -webkit-align-content: flex-start; }
 
-@media all and (min-width: 420px) {
-  .mxt-container .mix,
-  .mxt-container .gap {
-    width: 32%; } }
 .works {
   background: #f9f9f9;
   width: 100%;
@@ -427,9 +428,10 @@ p:last-child {
     height: 180px;
     -webkit-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
     -moz-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
-    transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1); }
+    transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+    overflow: hidden; }
     .works .mix .image img {
-      width: 100%;
+      width: 324px;
       height: auto; }
 
 .mix a:hover img {
@@ -487,6 +489,20 @@ p:last-child {
     background-position: -100px -30px; }
   100% {
     background-position: 160px -60px; } }
+.paginator {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  max-width: 1000px; }
+  .paginator a {
+    font-size: 20px;
+    color: #d62c2b; }
+  .paginator b {
+    ont-size: 20px;
+    color: #3085c0; }
+
 .footer {
   background: #f8f8f8;
   padding: 2em;

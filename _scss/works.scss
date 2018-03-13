@@ -206,7 +206,7 @@ fieldset {
 
   .image {
     img {
-      width: 100%;
+      width: 324px;
       height: auto;
     }
 
@@ -221,6 +221,7 @@ fieldset {
     -webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
     -moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
     transition: all .4s cubic-bezier(0.7,0,.3,1);
+    overflow: hidden;
   }
 }
 

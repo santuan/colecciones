@@ -132,14 +132,14 @@ p:last-child{
 }
 
 .mxt-container .mix{
-  text-align: left;
-  //background: #03899c;
-  margin-bottom: 2%;
-  padding: 0;
-  vertical-align: top;
-  //display: none;
-  background: #fff;
-  -webkit-backface-visibility: hidden;
+text-align: left;
+    /* margin-bottom: 2%; */
+    padding: 0;
+    vertical-align: top;
+    background: #fff;
+    -webkit-backface-visibility: hidden;
+    max-width: 324px;
+    margin: 0 auto 2%;
 }
 
 /* Flex box progressive enhancements: */
@@ -154,6 +154,6 @@ p:last-child{
 @media all and (min-width: 420px){
   .mxt-container .mix,
   .mxt-container .gap{
-    width: 32%;
+    //width: 32%;
   }
 }

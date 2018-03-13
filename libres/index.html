@@ -10,7 +10,7 @@ lang: es
 
 <div class="template works">
   <div id="Container" class="mxt-container">
-    <h2 style="width: 100%;">Colecciones ({{ site.posts | size }} resultados)</h2>
+    <h2 style="width: 100%;text-align: center;padding: 20px 0;">Colecciones ({{ site.posts | size }} resultados)</h2>
     {% for post in paginator.posts %}
     <div class="mix default {{post.category}} {{post.subcategory}}" data-myorder="{{post.order}}">
          <div class="image">
@@ -37,15 +37,15 @@ lang: es
   {% if paginator.next_page or paginator.previous_page %}
     {% if paginator.previous_page %}
       <a href="{{site.baseurl}}{{ paginator.previous_page_path }}">
-       <i class="fa fa-long-arrow-left" aria-hidden="true"></i> página anterior</a>
+       <i class="fas fa-chevron-left"></i> página anterior</a>
     {% else %}
-      <b> <i class="fa fa-long-arrow-left" aria-hidden="true"></i>página anterior</b>
+      <b> <i class="fas fa-chevron-left"></i>página anterior</b>
     {% endif %}
     <b>{{paginator.page}} / {{paginator.total_pages}}</b>
     {% if paginator.next_page %}
-      <a href="{{site.baseurl}}{{ paginator.next_page_path }}">página siguiente <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+      <a href="{{site.baseurl}}{{ paginator.next_page_path }}">página siguiente <i class="fas fa-chevron-right"></i></a>
     {% else %}
-      <b>página siguiente <i class="fa fa-long-arrow-right" aria-hidden="true"></i></b>
+      <b>página siguiente <i class="fas fa-chevron-right"></i></b>
     {% endif %}
   {% endif %}
   </div>

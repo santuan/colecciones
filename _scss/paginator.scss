@@ -1,0 +1,21 @@
+.paginator {
+	//border-top: 1px solid #ddd;
+	display: inline-flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 0;
+    max-width: 1000px;
+
+	a {
+	    font-size: 20px;
+	    color: #d62c2b;
+	}
+
+	b {
+		ont-size: 20px;
+	    color: #3085c0;
+	}
+
+	
+}
