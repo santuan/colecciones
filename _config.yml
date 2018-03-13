@@ -1,0 +1,49 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+
+baseurl: /colecciones
+exclude: ['README.md', 'Gemfile']
+permalink: "/libres/:slug"
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _scss
+
+host: 192.168.0.106
+
+title:
+  es: STN - Bienvenido
+  en: STN - Welcome
+description:
+  es: Una descripcion en español
+  en: Some description in english
+index:
+  es: 
+  en: welcome
+github_username:  santuan
+
+paginate: 12
+paginate_path: "/libres/:num/"
+
+t:
+  es:
+    open-source:
+      name: "Colecciones libres"
+      url: "/libres/"
+    submit:
+      name: "Sugerir"
+      url: "/sugerir/"
+  en:
+    open-source:
+      name: "Open Source Collection"
+      url: "/open-source/"
+    submit:
+      name: "Submit"
+      url: "/submit/"
+

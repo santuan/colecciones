@@ -1,0 +1,34 @@
+---
+layout: default
+ref: submit
+lang: es
+---
+
+<header id="way-header" class="way-header way-header-large">
+  {% include nav.html %}
+</header>
+
+
+<div class="template contact">
+
+<h1 class="header">Sugerir un recurso</h1>
+<h4 class="sub header">Se agradece el envio de cualquier tipo de aplicación, recurso, articulo de codigo abierto que creas valga la pena compartir.</h4>
+<form class="ui form" accept-charset="UTF-8" action="https://formspree.io/smrcouto88@gmail.com" method="POST">
+  <div class="required field">
+    <label>Nombre</label>
+    <input type="text" name="name" placeholder="Su Nombre">
+  </div>
+   <div class="field">
+    <label>Mail</label>
+    <input type="email" name="email" placeholder="Su Mail">
+  </div>
+   <div class="required field">
+    <label>Link al recurso, articulo, app, etc</label>
+    <input type="text" name="link" placeholder="compartalo">
+  </div>
+<input type="hidden" name="utf8" value="✓">
+<button class="ui button purple" type="submit">Envielo</button>
+</form>
+
+
+</div>

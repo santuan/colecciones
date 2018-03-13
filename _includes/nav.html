@@ -1,0 +1,22 @@
+<nav class="primary-menu">
+	<div class="ui container nav">
+		<div class="ui large secondary network menu">
+			<a href="{{ site.baseurl }}/{{ site.index[page.lang] }}" class="item logo">
+				<img src="{{ site.baseurl }}/img/trinomia.svg" alt="Logo">
+			</a>
+			<div class="site-menu left menu">
+			{% for menu in site.t[page.lang] %}
+			 <a href="{{ site.baseurl }}{{ menu[1].url }}" class="item">{{ menu[1].name }}</a>
+			{% endfor %}
+			
+			</div>
+			
+			<div class="lang-trigger right menu">
+			
+			<a href="https://santuan.github.io/web" class="item" target="_blank">
+			<img class="ui avatar right spaced image" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" style="width: 25px; height: 25px;" alt="">
+			Quien soy?</a>
+			</div>
+		</div>
+	</div>
+</nav>
